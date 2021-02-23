@@ -2,6 +2,7 @@
     --bg-colorrate: hsl(300, 24%, 96%);
     --font-color:hsl(300, 43%, 22%);
     --descrip-color: hsl(303, 10%, 53%);
+    --card-color: hsl(0, 0%, 100%);
 }
 .body{
       margin: 0px;
@@ -16,6 +17,8 @@ body::before{
     content: url(../Assets/Images/bg-pattern-top-desktop.svg);
     position:fixed;
     z-index: -1;
+    top:0;
+    left:0;
     
 }
 
@@ -24,14 +27,19 @@ body::after{
     position:absolute;
     z-index: -1;
     right: 400px;
+    
 }
 
 .header{
     width: 40%;
+    margin-right: 12%;
+    margin-bottom: 50px;
+    
 }
 .tittle{
     color:var(--font-color);
     margin-top: 30px;
+    margin-bottom: 5px;
     font-size: 40px;
 }
 
@@ -41,9 +49,10 @@ body::after{
 }
 
 .main{
-    width: 60%;
+    width: 45%;
     height: 200px;
-    padding-top: 30px;
+    padding-top: 25px;
+    padding-right: 0px;
 }
 
 
@@ -64,29 +73,81 @@ body::after{
 }
 .rate{
     background-color: var(--bg-colorrate);
-    margin-top: 12px;
+    margin-top: 15px;
+    margin-right: 0px;
     border-radius: 10px;
-    height: 45px;
+    height: 50px;
     display: flex;
     align-content: center;
+    width: 75%;
 }
 
-.rate1{
-    width: 70%;
+.rate1{  
     margin-left: 0;
 }
 .rate2{
-    width: 70%;
     margin-left: 7%;
 
 }
-.rate3{
-    width: 70%;
+.rate3{  
     margin-left: 14%;
-
 }
 
+footer{
+    display: flex;
+    height: 250px;
+    margin:0;
+}
 
+.card{
+    background-color: var(--font-color);
+    width: 260px;
+    height: 175px;
+    border-radius: 10px;
+    margin-right: 30px;
+    padding: 40px 30px 0 30px;
+}
+.card-img{
+    border-radius: 50%;
+    width: 35px;
+    
+}
+
+.profile-descrip{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.h5{
+    color:rgba(255, 255, 255, 0.822);
+    font-size: 12px;
+    margin:0;
+    margin-bottom:5px;
+    font-weight: 700px;
+}
+.rol{
+    color:hsl(334, 30%, 52%);
+    font-size: 12px;
+    margin:0;
+    font-weight: lighter;
+}
+
+.card-text{
+    color: white;
+    font-size: 12px;
+    width: 100%;
+    margin:20px 0 0 0;
+    font-weight: 200;
+    line-height: 19px;
+}
+
+.card2{
+    align-self: center;
+}
+
+.card3{
+    align-self: flex-end;
+}
 
 
 
