@@ -1,0 +1,92 @@
+:root{
+    --bg-colorrate: hsl(300, 24%, 96%);
+    --font-color:hsl(300, 43%, 22%);
+    --descrip-color: hsl(303, 10%, 53%);
+}
+.body{
+      margin: 0px;
+      position: relative;
+      font-family: Spartan;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 5% 10%;
+}
+
+body::before{
+    content: url(../Assets/Images/bg-pattern-top-desktop.svg);
+    position:fixed;
+    z-index: -1;
+    
+}
+
+body::after{
+    content: url(../Assets/Images/bg-pattern-bottom-mobile.svg);
+    position:absolute;
+    z-index: -1;
+    right: 400px;
+}
+
+.header{
+    width: 40%;
+}
+.tittle{
+    color:var(--font-color);
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.descript{
+    color: var(--descrip-color);
+    font-size: 14px;
+}
+
+.main{
+    width: 60%;
+    height: 200px;
+    padding-top: 30px;
+}
+
+
+.star-container, .ratedescrip{
+    align-self: center;
+    margin-left: 7%;
+}
+
+.ratedescrip{
+    margin-left: 7%;
+    color: var(--font-color);
+    font-weight: 900;
+    font-size: 11px;
+}
+.rates{
+    width: 100%;
+    margin:0;   
+}
+.rate{
+    background-color: var(--bg-colorrate);
+    margin-top: 12px;
+    border-radius: 10px;
+    height: 45px;
+    display: flex;
+    align-content: center;
+}
+
+.rate1{
+    width: 70%;
+    margin-left: 0;
+}
+.rate2{
+    width: 70%;
+    margin-left: 7%;
+
+}
+.rate3{
+    width: 70%;
+    margin-left: 14%;
+
+}
+
+
+
+
+
