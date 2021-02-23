@@ -6,11 +6,12 @@
 }
 .body{
       margin: 0px;
+      width: 70%;
       position: relative;
       font-family: Spartan;
       display: flex;
       flex-wrap: wrap;
-      padding: 5% 10%;
+      padding: 5% 15%;
 }
 
 body::before{
@@ -26,7 +27,8 @@ body::after{
     content: url(../Assets/Images/bg-pattern-bottom-mobile.svg);
     position:absolute;
     z-index: -1;
-    right: 400px;
+    right: 500;
+    bottom:500;
     
 }
 
@@ -40,7 +42,7 @@ body::after{
     color:var(--font-color);
     margin-top: 30px;
     margin-bottom: 5px;
-    font-size: 40px;
+    font-size: 45px;
 }
 
 .descript{
@@ -103,7 +105,7 @@ footer{
 
 .card{
     background-color: var(--font-color);
-    width: 270px;
+    width: 265px;
     height: 175px;
     border-radius: 10px;
     margin-right: 30px;
@@ -139,7 +141,7 @@ footer{
     font-size: 12px;
     width: 100%;
     margin:20px 0 0 0;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 19px;
 }
 
