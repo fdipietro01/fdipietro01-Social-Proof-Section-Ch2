@@ -128,10 +128,10 @@ footer{
     font-weight: 700px;
 }
 .rol{
-    color:hsl(334, 30%, 52%);
+    color:hsl(334, 36%, 62%);
     font-size: 12px;
     margin:0;
-    font-weight: lighter;
+    font-weight: 400;
 }
 
 .card-text{
