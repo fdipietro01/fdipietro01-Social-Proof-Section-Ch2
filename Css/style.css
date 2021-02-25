@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: Spartan;
+}
+:root{
+    --bg-colorrate: hsl(300, 24%, 96%);
+    --font-color:hsl(300, 43%, 22%);
+    --descrip-color: hsl(303, 10%, 53%);
+    --card-color: hsl(0, 0%, 100%);
+}
+.body{
+    width: 100%;
+    position: relative;
+}
+.top-layout{
+      margin:80px auto 50px auto;
+      max-width: 70%;
+      display: flex;  
+      flex-wrap: wrap;  
+}
+.header{
+    justify-self: center;
+    width: 40%;
+    margin-right: 65px;
+    margin-left: 5px; ;
+}
+.body::before{
+    content: url(../Assets/Images/bg-pattern-top-desktop.svg);
+    position:fixed;
+    z-index: -1;
+    top:0;
+    left:0;
+}
+
+.body::after{
+    content: url(../Assets/Images/bg-pattern-bottom-mobile.svg);
+    z-index: -1;
+    bottom:0;
+    right:0;
+    position:fixed;
+}
+
+.tittle{
+    color:var(--font-color);
+    margin-bottom: 5px;
+    font-size: 45px;
+}
+
+.descript{
+    color: var(--descrip-color);
+    font-size: 14px;
+}
+
+.ratedescrip{
+    color: var(--font-color);
+    font-weight: 900;
+    font-size: 12px;
+}
+.aside{
+    width: 47%;
+}
+
+.rates{
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.rate{
+    background-color: var(--bg-colorrate);
+    margin-top: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+}
+.rate1{
+    align-self: flex-start;
+}
+.rate2{
+    align-self: center;
+}
+.rate3{
+    align-self: flex-end;
+}
+
+.star-container{
+    margin-right: 40px;
+    margin-left: 15px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: start;
+    max-width: 100%;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.card{
+    background-color: var(--font-color);
+    width: 320px;
+    height: 220px;
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 30px 20px;
+
+}
+
+.card-img{
+    border-radius: 50%;
+    width: 35px;
+    margin-left: 10px;
+    
+}
+
+.profile-descrip{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.h5{
+    color:rgba(255, 255, 255, 0.822);
+    font-size: 12px;
+    margin:0;
+    margin-bottom:5px;
+    font-weight: 700px;
+}
+.rol{
+    color:hsl(334, 36%, 62%);
+    font-size: 12px;
+    margin:0;
+    font-weight: 400;
+}
+
+.card-text{
+    color: white;
+    font-size: 13px;
+    width: 100%;
+    margin:20px 5px 0 ;
+    font-weight: 300;
+    line-height: 19px;
+    
+}
+.card1{
+    align-self: flex-start;
+}
+
+.card2{
+    align-self: center;
+}
+
+.card3{
+    margin-top: 40px;
+    align-self: flex-end;
+}
+
+
+
+
+/*QUERYS*/
+
+@media (max-width: 380px){
+
+    .top-layout{
+        margin:0;
+        margin-bottom: 25px;
+        width: 100%;
+        max-width: none;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .header{
+        width: 100%;
+        margin-right: 0px;
+        margin-top: 40px;
+        padding: 15px;
+        padding-bottom: 0;
+    }
+    .tittle{
+        font-size: 32px;
+    }
+    .descript{
+        font-size: 13x;
+        padding: 12px 10px;
+    }
+    .rate{
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .card-container{
+        flex-direction: column;
+    }
+    .card1 , .card2, .card3{
+        margin-top:10px;
+        align-self: center;
+    }
+    .aside{
+        width: 100%;
+    }
+    .star-container{
+        margin-bottom: 10px;
+    }
+
+}
